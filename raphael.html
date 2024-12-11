@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raphael</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            background: black;
+        }
+        .container{
+            color: #f2f2f2;
+            background: rgba(12, 30, 101, 0.483);
+            width: 600px;
+            padding: 30px 20px;
+            box-shadow: 5px 5px 50px rgba(201, 211, 17, 0.895);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.578);
+        }
+        .container h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: rgb(118, 226, 11);
+        }
+        .container p{
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .container button,.container a{
+            background-color: rgba(118, 226, 11, 0.796);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s ease-in-out;
+        }
+        .container a{
+            text-decoration: none;
+            margin-left: 10px;
+            background: rgb(14, 146, 199);
+        }
+        .container button:hover{
+            background-color: rgb(15, 73, 145);
+            transform: scale(1.01);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Raphael</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, nulla et facilisis facilisis, nunc odio cursus purus, vitae efficitur nisi nisi ac arcu. Nullam et fermentum dui, vel euismod neque. Sed vel justo vel est malesuada sagittis. Cras vel libero et velit pellentesque tincidunt.</p>
+        <button>Contact</button>
+        <a href="#">Learn More</a>
+    </div>
+</body>
+</html>
