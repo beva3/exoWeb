@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Border Example</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse; /* Merge borders */
+        }
+        th, td {
+            /* border: 1px solid black; Cell borders */
+            padding: 8px;
+            text-align: left;
+            text-align: center;
+        }
+        tr:nth-child(even){
+            background-color: #5ea1a0; /* Light grey background */
+        }
+        .control{
+            margin-top: 50px;
+            background: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <div class="control">
+        <input type="text" name="" id="">
+    </div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Charlie</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Frank</td>
+            <td>35</td>
+        </tr>
+    </table>
+</body>
+</html>
