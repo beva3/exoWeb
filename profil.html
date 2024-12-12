@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profil</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profil-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        button{
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            transition: ease 0.2s;
+            /* box-shadow: 0px 10px 10px rgba(13, 8, 8, 0.1); */
+        }
+        button:hover{
+            /* background-color: #85eae5; */
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+            transform: scale(1.09);
+        }
+        .first-name{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #2d676ee7;
+        }
+    </style>
+</head>
+<body>
+    <div class="profil-card">
+        <img src="./Animated.png" alt="profil">
+        <h2> <span class="first-name">Raphael</span>  Randrianantoanina</h2>
+        <p>Web developer & Disigner</p>
+        <button>contact me</button>
+
+    </div>
+</body>
+</html>
