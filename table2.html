@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            font-family: 'Courier New', Courier, monospace;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        table {
+            /* display: contents; */
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 50px;
+        }
+        tbody{
+            height: 400px;
+        }
+
+        th, td {
+            /* border: 1px solid black; */
+            padding: 10px;
+        }
+        td:nth-child(3){
+            text-align: left;
+            width: 400px;
+            /* overflow: scroll; */
+            /* overflow-y: scroll; */
+            color: rgb(7, 37, 54);
+        }
+        td:nth-child(1),td:nth-child(2){
+            text-align: center;
+        }
+        th {
+            background-color: rgb(5, 118, 126);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even){
+            background-color: rgba(192, 234, 243, 0.551);
+        }
+        tr:nth-child(odd){
+            background-color: rgba(206, 223, 164, 0.551);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead class="header-fixed">
+                <tr>
+                    <th>Name</th>
+                    <th>Color</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Apple</td>
+                    <td>Red</td>
+                    <td>An apple is a sweet, edible fruit produced by the fruit tree of the genus Malus.</td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>Yellow</td>
+                    <td>A yellow fruit, native to tropical regions of South America, Central America, and the Caribbean. It is a member of the Musaceae family.</td>
+                </tr>
+                <tr>
+                    <td>Orange</td>
+                    <td>Orange</td>
+                    <td>The orange is the only edible fruit that is part of the fruit family Rutaceae and is also the most widely consumed fruit in the world.</td>
+                </tr>
+                <tr>
+                    <td>Grapefruit</td>
+                    <td>Red</td>
+                    <td>Grapefruit is a red fruit with a smooth, juicy flesh and a small, sweet, and slightly acidic juice. It is the most commonly consumed red fruit in the world.</td>
+                </tr>
+                <tr>
+                    <td>Grapefruit</td>
+                    <td>Red</td>
+                    <td>Grapefruit is a red fruit with a smooth, juicy flesh and a small, sweet, and slightly acidic juice. It is the most commonly consumed red fruit in the world.</td>
+                </tr>
+                <tr>
+                    <td>Grapefruit</td>
+                    <td>Red</td>
+                    <td>Grapefruit is a red fruit with a smooth, juicy flesh and a small, sweet, and slightly acidic juice. It is the most commonly consumed red fruit in the world.</td>
+                </tr>
+                <tr>
+                    <td>Grapefruit</td>
+                    <td>Red</td>
+                    <td>Grapefruit is a red fruit with a smooth, juicy flesh and a small, sweet, and slightly acidic juice. It is the most commonly consumed red fruit in the world.</td>
+                </tr>
+                <tr>
+                    <td>Grapefruit</td>
+                    <td>Red</td>
+                    <td>P-Grapefruit is a red fruit with a smooth, juicy flesh and a small, sweet, and slightly acidic juice. It is the most commonly consumed red fruit in the world.</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
