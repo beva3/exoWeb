@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            /* text-align: center; */
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* height: 100vh; */
+            background-color: #f2f2f2;
+        }
+        #them{
+            color: rgb(72, 160, 160);
+            text-transform: uppercase;
+            font-size: 4rem;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            overflow-wrap: break-word;
+        }
+        
+        .container{
+            width: 80vw;
+            box-sizing: content-box;
+            padding: 20px;
+            background: linear-gradient(120deg, rgb(73, 105, 19), rgba(221, 9, 229, 0.699));
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            
+            margin-bottom: 20px;
+        }
+        .title{
+            color: rgb(13, 181, 215);
+        }
+        ol{
+            list-style-type:lower-alpha;
+            padding: 0;
+            margin: 0;
+            /* border: 1px solid red; */
+            /* border-radius: 30px; */
+            /* background: gray; */
+            margin: 30px;
+        }
+        li{
+            margin: 20px;
+        }
+        .links{
+            display: flex;
+            /* justify-content: space-around; */
+            flex-direction: row;
+            margin-top: 20px;
+        }
+        .links a{
+            color: #3498db;
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: 0.1s ease;
+        }
+        @media(min-width: 768px){
+            .links a{
+                margin-left: 20px;
+            }
+            .links a:hover{
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+                transform: scale(1.05);
+            }
+            .links a{
+                background: rgba(34, 85, 23, 0.454);
+                border:1px solid #f2f2f240;
+                box-shadow: 0px 5px  10px rgba(197, 192, 187, 0.3);
+            }
+        }
+        @media(max-width: 768px) {
+            #them{
+                font-size: 1.6rem;
+                /* color: rgb(23, 192, 54); */
+            }
+            .links{
+                display: flex;
+                justify-content: space-around;
+            }
+            .links a{
+                background: rgba(179, 152, 113, 0.454);
+                border: #f2f2f2;
+                box-shadow: 5px 5px 10px rgba(10, 15, 20, 0.3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="margin-top: 20px;">
+        <h1 id="them">Artificial Intelligence</h1>
+        <p>Artificial Intelligence (AI) is the study and application of algorithms to create intelligent machines capable of simulating human intelligence. AI has revolutionized various fields, including computer science, engineering, medicine, finance, and more.</p>
+        <div class="links">
+            <a href="#what">About</a>
+            <a href="#why">why</a>
+            <a href="#how">About</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="title" id="what" >What is AI </h2>
+        <p>
+            Artificial Intelligence (AI) is a branch of computer 
+            science that focuses on creating systems capable of 
+            performing tasks that typically require human 
+            intelligence. These tasks include understanding natural 
+            language, recognizing patterns, solving problems, 
+            and making decisions. AI can range from simple algorithms that 
+            perform specific tasks (like recommending movies) to advanced 
+            systems that simulate human-like reasoning and learning.
+        </p>
+    </div>
+    <div class="container">
+        <h2 class="title" id="why" >Why is AI Important? </h2>
+        <div class="list">
+            <ol>
+                <li>Automation
+                    <p> AI automates repetitive tasks, freeing up human effort for more creative and strategic activities.</p>
+                </li>
+                <li>Efficiency
+                    <p>AI-powered tools can process large volumes of data much faster and more accurately than humans.</p>
+                </li>
+                <li>Innovation
+                    <p>AI drives advancements in various fields, including healthcare, education, transportation, and entertainment.</p>
+                </li>
+                <li>Problem Solving
+                    <p> It helps tackle complex challenges like climate change, disease diagnosis, and logistics optimization.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="title" id="how">How Does AI Work? </h2>
+        <p>AI relies on several foundational components:</p>
+        <div class="list">
+            <ol>
+                <li>Data
+                    <p>AI systems require large amounts of data to learn patterns and make predictions.</p>
+                </li>
+                <li>Algorithms
+                    <p>These are sets of rules or instructions the AI uses to analyze data and perform tasks.</p>
+                </li>
+                <li>Machine Learning (ML):
+                    <p> A subset of AI where systems learn and improve from experience without being explicitly programmed.</p>
+                    <ul>
+                        <li>Supervised Learning
+                            <p>AI learns from labeled data (e.g., identifying cats in images when provided examples).</p>
+                        </li>
+                        <li>Unsupervised Learning
+                            <p>AI identifies patterns in unlabeled data (e.g., grouping similar customer behaviors).</p>
+                        </li>
+                        <li>Reinforcement Learning
+                            <p>AI learns by trial and error, receiving feedback to improve (e.g., teaching robots to walk).</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>Neural Networks
+                    <p> Inspired by the human brain, these are systems of interconnected nodes (like neurons) that process data in layers for tasks like image or speech recognition.</p>
+                </li>
+                <li>Natural Language Processing (NLP)
+                    <p> Enables AI to understand and generate human language (like chatbots and translation tools).</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    
+</body>
+</html>
