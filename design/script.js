@@ -80,7 +80,7 @@ data.forEach(element => {
         <img src="./start.webp" class="card-img-top" alt="Item Image">
             <div class="card-body">
             <h5 class="card-title">${element['item']}</h5>
-            <p class="card-text border px-2" style="height:70px; overflow-y:auto">${element['description']}</p>
+            <p class="card-text border px-2" style="height:90px; overflow-y:auto">${element['description']}</p>
             <a href="${element['url']}" class="btn btn-primary">View More</a>
             <a href="${element['tutorial_url']}" target="_blank" class="btn btn-success">Video</a>
         </div>
