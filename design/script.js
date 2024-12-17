@@ -1,6 +1,6 @@
 const data = [
     {
-        "img": "https://via.placeholder.com/150?text=Start+Bootstrap",
+        "img": "./start.webp",
         "item": "Start Bootstrap",
         "description": "Free and open-source Bootstrap-based templates for creating responsive websites.",
         "url": "https://startbootstrap.com/",
@@ -77,7 +77,7 @@ data.forEach(element => {
     row.innerHTML += `
     <div class="col-md-4 mb-4">
     <div class="card mb-5" >
-        <img src="${element['img']}" class="card-img-top" alt="Item Image">
+        <img src="./start.webp" class="card-img-top" alt="Item Image">
             <div class="card-body">
             <h5 class="card-title">${element['item']}</h5>
             <p class="card-text">${element['description']}</p>

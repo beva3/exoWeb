@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Solver</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center">Quadratic Equation Solver</h2>
+    <form id="equationForm" class="p-4 border rounded">
+        <div class="mb-3">
+            <label for="a" class="form-label">Coefficient a:</label>
+            <input type="number" class="form-control" id="a" required>
+        </div>
+        <div class="mb-3">
+            <label for="b" class="form-label">Coefficient b:</label>
+            <input type="number" class="form-control" id="b" required>
+        </div>
+        <div class="mb-3">
+            <label for="c" class="form-label">Coefficient c:</label>
+            <input type="number" class="form-control" id="c" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Solve</button>
+    </form>
+
+    <div id="result" class="alert alert-info mt-4 d-none"></div>
+</div>
+
+<script>
+    class secDeg{
+        constructor(a,b,c){
+            this.a = a;
+            this.b = b;
+            this.c = c;
+            
+        }
+        discriminant(){
+            return Math.pow(this.b,2) - 4*this.a*this.c;
+        }
+        roots(){
+            const d = this.discriminant();
+            let root1 = 0;
+            let root2 = 0;
+
+            if(d > 0){
+                root1 = (-this.b + Math.sqrt(d)) / (2*this.a);
+                root2 = (-this.b - Math.sqrt(d)) / (2*this.a);
+                return [root1,root2]
+            }
+            else if(d === 0){
+                root1 = -this.b / (2*this.a);
+                return [root1,root1]
+            }
+            else{
+                return ["complex","complex"]
+            }
+        }
+        displayRoot(){
+            let [root1,root2] = this.roots();
+            let result = '';
+            if(root1 === root2){
+                result = `The equation has equal roots: x = ${root1}`;
+            }
+            else if(root1 !== root2){
+                result = `The equation has distinct roots: x₁ = ${root1}, x₂ = ${root2}`;
+            }
+            else{
+                result = "The equation has complex roots.";
+            }
+            alert(result);
+            
+
+        }
+    }
+
+
+
+    // let a = document.getElementById("a").value,
+    //     b = document.getElementById("b").value,
+    //     c = document.getElementById("c").value;
+    // let eq = new secDeg(a,b,c)
+
+    const submit = document.getElementById('equationForm');
+    submit.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        let a = document.getElementById("a").value,
+        b = document.getElementById("b").value,
+        c = document.getElementById("c").value;
+        let eq = new secDeg(a,b,c)
+        eq.roots();
+        eq.displayRoot();
+    })
+</script>
+</body>
+</html>
